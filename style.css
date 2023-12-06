@@ -1,33 +1,35 @@
+ * {box-sizing: border-box;}
+
 body {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0px;
   background-color: bisque;
 }
-
-#main_heading {
-  background: url("https://i.ibb.co/WBQ9F0c/Varhaug-kirke.jpg");
-  color: rgb(49, 49, 58);
+header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://i.ibb.co/WBQ9F0c/Varhaug-kirke.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#main_heading {
+  color: rgb(14, 14, 158);
+  
+  text-align: center;
 }
 
-div {
+.div_container {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .div_inline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-inline: 10px;
   
 }
 
 h2 {
   display: flex;
-  margin-bottom: 10px;
-  
 }
